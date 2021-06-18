@@ -1,6 +1,0 @@
-C:\Users\HieuNhan\Desktop\quanLyNhaHangBuffer\DTO_HH\bin\Debug\DTO_HH.dll
-C:\Users\HieuNhan\Desktop\quanLyNhaHangBuffer\DTO_HH\bin\Debug\DTO_HH.pdb
-C:\Users\HieuNhan\Desktop\quanLyNhaHangBuffer\DTO_HH\obj\Debug\DTO_QUANLY.csprojAssemblyReference.cache
-C:\Users\HieuNhan\Desktop\quanLyNhaHangBuffer\DTO_HH\obj\Debug\DTO_QUANLY.csproj.CoreCompileInputs.cache
-C:\Users\HieuNhan\Desktop\quanLyNhaHangBuffer\DTO_HH\obj\Debug\DTO_HH.dll
-C:\Users\HieuNhan\Desktop\quanLyNhaHangBuffer\DTO_HH\obj\Debug\DTO_HH.pdb
