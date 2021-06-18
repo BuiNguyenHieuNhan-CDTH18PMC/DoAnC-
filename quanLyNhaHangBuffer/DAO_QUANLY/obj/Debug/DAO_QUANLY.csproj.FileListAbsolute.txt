@@ -1,0 +1,9 @@
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csprojAssemblyReference.cache
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csproj.CoreCompileInputs.cache
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DAO_QUANLY.dll
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DAO_QUANLY.pdb
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DTO_QUANLY.dll
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DTO_QUANLY.pdb
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csproj.CopyComplete
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.dll
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.pdb
