@@ -33,9 +33,6 @@ namespace quanLyNhaHangBuffer
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHangHoa));
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnXoa = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnCapNhat = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnLuu = new Bunifu.Framework.UI.BunifuTileButton();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTenNCC = new System.Windows.Forms.TextBox();
@@ -44,14 +41,18 @@ namespace quanLyNhaHangBuffer
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtgvHH = new System.Windows.Forms.DataGridView();
-            this.hANGHOABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hH = new quanLyNhaHangBuffer.HH();
-            this.hANGHOATableAdapter = new quanLyNhaHangBuffer.HHTableAdapters.HANGHOATableAdapter();
             this.mAHHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tENHHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dONGIADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hANGHOABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hH = new quanLyNhaHangBuffer.HH();
+            this.hANGHOATableAdapter = new quanLyNhaHangBuffer.HHTableAdapters.HANGHOATableAdapter();
+            this.btnClose = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnRefresh = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnXoa = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnCapNhat = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnLuu = new Bunifu.Framework.UI.BunifuTileButton();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHH)).BeginInit();
@@ -71,6 +72,7 @@ namespace quanLyNhaHangBuffer
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnClose);
             this.groupBox1.Controls.Add(this.btnRefresh);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnCapNhat);
@@ -88,66 +90,6 @@ namespace quanLyNhaHangBuffer
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.White;
-            this.btnXoa.color = System.Drawing.Color.White;
-            this.btnXoa.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.ImagePosition = 21;
-            this.btnXoa.ImageZoom = 50;
-            this.btnXoa.LabelPosition = 43;
-            this.btnXoa.LabelText = "Xóa";
-            this.btnXoa.Location = new System.Drawing.Point(313, 508);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(6);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(133, 134);
-            this.btnXoa.TabIndex = 15;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.BackColor = System.Drawing.Color.White;
-            this.btnCapNhat.color = System.Drawing.Color.White;
-            this.btnCapNhat.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCapNhat.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhat.ForeColor = System.Drawing.Color.Black;
-            this.btnCapNhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.Image")));
-            this.btnCapNhat.ImagePosition = 21;
-            this.btnCapNhat.ImageZoom = 50;
-            this.btnCapNhat.LabelPosition = 43;
-            this.btnCapNhat.LabelText = "Cập nhật";
-            this.btnCapNhat.Location = new System.Drawing.Point(313, 310);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(6);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(133, 134);
-            this.btnCapNhat.TabIndex = 13;
-            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.White;
-            this.btnLuu.color = System.Drawing.Color.White;
-            this.btnLuu.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLuu.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
-            this.btnLuu.ImagePosition = 21;
-            this.btnLuu.ImageZoom = 50;
-            this.btnLuu.LabelPosition = 43;
-            this.btnLuu.LabelText = "Lưu";
-            this.btnLuu.Location = new System.Drawing.Point(117, 310);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(6);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(133, 134);
-            this.btnLuu.TabIndex = 12;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtDonGia
             // 
@@ -237,20 +179,6 @@ namespace quanLyNhaHangBuffer
             this.dtgvHH.TabIndex = 0;
             this.dtgvHH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvHH_CellClick);
             // 
-            // hANGHOABindingSource
-            // 
-            this.hANGHOABindingSource.DataMember = "HANGHOA";
-            this.hANGHOABindingSource.DataSource = this.hH;
-            // 
-            // hH
-            // 
-            this.hH.DataSetName = "HH";
-            this.hH.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hANGHOATableAdapter
-            // 
-            this.hANGHOATableAdapter.ClearBeforeFill = true;
-            // 
             // mAHHDataGridViewTextBoxColumn
             // 
             this.mAHHDataGridViewTextBoxColumn.DataPropertyName = "MAHH";
@@ -276,6 +204,40 @@ namespace quanLyNhaHangBuffer
             this.dONGIADataGridViewTextBoxColumn.HeaderText = "Đơn giá";
             this.dONGIADataGridViewTextBoxColumn.Name = "dONGIADataGridViewTextBoxColumn";
             // 
+            // hANGHOABindingSource
+            // 
+            this.hANGHOABindingSource.DataMember = "HANGHOA";
+            this.hANGHOABindingSource.DataSource = this.hH;
+            // 
+            // hH
+            // 
+            this.hH.DataSetName = "HH";
+            this.hH.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hANGHOATableAdapter
+            // 
+            this.hANGHOATableAdapter.ClearBeforeFill = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.color = System.Drawing.Color.White;
+            this.btnClose.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImagePosition = 21;
+            this.btnClose.ImageZoom = 50;
+            this.btnClose.LabelPosition = 43;
+            this.btnClose.LabelText = "Làm mới";
+            this.btnClose.Location = new System.Drawing.Point(317, 536);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(133, 134);
+            this.btnClose.TabIndex = 69;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.White;
@@ -289,12 +251,72 @@ namespace quanLyNhaHangBuffer
             this.btnRefresh.ImageZoom = 50;
             this.btnRefresh.LabelPosition = 43;
             this.btnRefresh.LabelText = "Làm mới";
-            this.btnRefresh.Location = new System.Drawing.Point(117, 508);
+            this.btnRefresh.Location = new System.Drawing.Point(136, 536);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(6);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(133, 134);
-            this.btnRefresh.TabIndex = 16;
+            this.btnRefresh.TabIndex = 68;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.White;
+            this.btnXoa.color = System.Drawing.Color.White;
+            this.btnXoa.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImagePosition = 21;
+            this.btnXoa.ImageZoom = 50;
+            this.btnXoa.LabelPosition = 43;
+            this.btnXoa.LabelText = "Xóa";
+            this.btnXoa.Location = new System.Drawing.Point(404, 358);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(6);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(133, 134);
+            this.btnXoa.TabIndex = 67;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.White;
+            this.btnCapNhat.color = System.Drawing.Color.White;
+            this.btnCapNhat.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCapNhat.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.ForeColor = System.Drawing.Color.Black;
+            this.btnCapNhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.Image")));
+            this.btnCapNhat.ImagePosition = 21;
+            this.btnCapNhat.ImageZoom = 50;
+            this.btnCapNhat.LabelPosition = 43;
+            this.btnCapNhat.LabelText = "Cập nhật";
+            this.btnCapNhat.Location = new System.Drawing.Point(228, 358);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(133, 134);
+            this.btnCapNhat.TabIndex = 66;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.White;
+            this.btnLuu.color = System.Drawing.Color.White;
+            this.btnLuu.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.Black;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImagePosition = 21;
+            this.btnLuu.ImageZoom = 50;
+            this.btnLuu.LabelPosition = 43;
+            this.btnLuu.LabelText = "Lưu";
+            this.btnLuu.Location = new System.Drawing.Point(54, 358);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(6);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(133, 134);
+            this.btnLuu.TabIndex = 65;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // formHangHoa
             // 
@@ -333,14 +355,15 @@ namespace quanLyNhaHangBuffer
         private HH hH;
         private System.Windows.Forms.BindingSource hANGHOABindingSource;
         private HHTableAdapters.HANGHOATableAdapter hANGHOATableAdapter;
-        private Bunifu.Framework.UI.BunifuTileButton btnXoa;
-        private Bunifu.Framework.UI.BunifuTileButton btnCapNhat;
-        private Bunifu.Framework.UI.BunifuTileButton btnLuu;
         private System.Windows.Forms.DataGridViewTextBoxColumn mANCCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mAHHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tENHHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn TENNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn dONGIADataGridViewTextBoxColumn;
+        private Bunifu.Framework.UI.BunifuTileButton btnClose;
         private Bunifu.Framework.UI.BunifuTileButton btnRefresh;
+        private Bunifu.Framework.UI.BunifuTileButton btnXoa;
+        private Bunifu.Framework.UI.BunifuTileButton btnCapNhat;
+        private Bunifu.Framework.UI.BunifuTileButton btnLuu;
     }
 }

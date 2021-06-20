@@ -16,8 +16,8 @@ namespace quanLyNhaHangBuffer
 {
     public partial class formThongKe : Form
     {
-        BUS_THONGKE bus = new BUS_THONGKE();
-        DTO_THONGKE dto;       
+        THONGKE_BUS bus = new THONGKE_BUS();
+        THONGKE_DTO dto;       
         string thongKeNgay = "select NGAY, SUM(TONGTIEN) AS TONGDOANHTHU FROM HD GROUP BY NGAY";
         string thongKeThang = "select THANG, SUM(TONGTIEN) AS TONGDOANHTHU FROM HD GROUP BY THANG";
         string thongKeSanPham = "select TENMON, SUM(THANHTIEN) AS TONGDOANHTHU FROM MENU, CTHD WHERE MENU.MAMON = CTHD.MAMON GROUP BY TENMON";
@@ -28,7 +28,7 @@ namespace quanLyNhaHangBuffer
 
         private void btnThongKeNgay_Click(object sender, EventArgs e)
         {
-            dto = new DTO_THONGKE(thongKeNgay);
+            dto = new THONGKE_DTO(thongKeNgay);
             chart1.DataSource = bus.thongKe(dto);
             chart1.Series["Series1"].XValueMember = "NGAY";
             chart1.Series["Series1"].YValueMembers = "TONGDOANHTHU";
@@ -39,7 +39,7 @@ namespace quanLyNhaHangBuffer
 
         private void btnThongKeThang_Click(object sender, EventArgs e)
         {
-            dto = new DTO_THONGKE(thongKeThang);
+            dto = new THONGKE_DTO(thongKeThang);
             chart1.DataSource = bus.thongKe(dto);
             chart1.Series["Series1"].XValueMember = "THANG";
             chart1.Series["Series1"].YValueMembers = "TONGDOANHTHU";
@@ -50,7 +50,7 @@ namespace quanLyNhaHangBuffer
 
         private void btnThongKeHH_Click(object sender, EventArgs e)
         {
-            dto = new DTO_THONGKE(thongKeSanPham);
+            dto = new THONGKE_DTO(thongKeSanPham);
             chart1.DataSource = bus.thongKe(dto);
             chart1.Series["Series1"].XValueMember = "TENMON";
             chart1.Series["Series1"].YValueMembers = "TONGDOANHTHU";

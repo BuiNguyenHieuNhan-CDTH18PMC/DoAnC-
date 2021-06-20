@@ -58,7 +58,7 @@ namespace quanLyNhaHangBuffer
 
         private void btnNCC_Click(object sender, EventArgs e)
         {
-            
+            openFormChild(new formNhaCungCap());
         }
 
         private void btnBanHang_Click(object sender, EventArgs e)

@@ -117,6 +117,18 @@
     <Compile Include="formInBill.Designer.cs">
       <DependentUpon>formInBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="formKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKhachHang.Designer.cs">
+      <DependentUpon>formKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNhaCungCap.Designer.cs">
+      <DependentUpon>formNhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="formNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +145,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NV.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formInBill.resx">
       <DependentUpon>formInBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKhachHang.resx">
+      <DependentUpon>formKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNhaCungCap.resx">
+      <DependentUpon>formNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formNhanVien.resx">
       <DependentUpon>formNhanVien.cs</DependentUpon>
@@ -203,6 +236,39 @@
     </None>
     <None Include="HH.xss">
       <DependentUpon>HH.xsd</DependentUpon>
+    </None>
+    <None Include="KH.xsc">
+      <DependentUpon>KH.xsd</DependentUpon>
+    </None>
+    <None Include="KH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KH.xss">
+      <DependentUpon>KH.xsd</DependentUpon>
+    </None>
+    <None Include="NCC.xsc">
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </None>
+    <None Include="NCC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NCC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NCC.xss">
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </None>
+    <None Include="NV.xsc">
+      <DependentUpon>NV.xsd</DependentUpon>
+    </None>
+    <None Include="NV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NV.xss">
+      <DependentUpon>NV.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

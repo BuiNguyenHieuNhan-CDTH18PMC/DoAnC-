@@ -15,8 +15,9 @@ namespace quanLyNhaHangBuffer
 {
     public partial class formHangHoa : Form
     {
-        BUS_HH busHH = new BUS_HH();
-        DTO_HH dtoHH;
+        HH_BUS busHH = new HH_BUS();
+        HH_DTO dtoHH;
+        List<HH_DTO> list = new List<HH_DTO>();
         string ma;
         public formHangHoa()
         {
@@ -25,30 +26,22 @@ namespace quanLyNhaHangBuffer
 
         private void formHangHoa_Load(object sender, EventArgs e)
         {
-            List<DTO_HH> list = new List<DTO_HH>();
-            dtgvHH.DataSource = busHH.hienThi();
             AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
-            try
+            dtoHH = new HH_DTO();           
+            list = busHH.auto(dtoHH);
+            foreach (var giatri in list)
             {
-                dtoHH = new DTO_HH();
-                list = busHH.auto(dtoHH);
-                foreach(var giatri in list)
-                {
-                    auto.Add(giatri.Tenhh);
-                    ma = giatri.Mahh.ToString();
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                auto.Add(giatri.tenncc);
+                ma = giatri.Mahh.ToString();
             }
             txtTenNCC.AutoCompleteCustomSource = auto;
+            dtgvHH.DataSource = busHH.hienThi();
         }
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             try
             {
-                DTO_HH dto = new DTO_HH(int.Parse(dtgvHH[0, dtgvHH.CurrentRow.Index].Value.ToString()), int.Parse(ma), txtTenHH.Text, int.Parse(txtDonGia.Text));
+                HH_DTO dto = new HH_DTO(int.Parse(dtgvHH[0, dtgvHH.CurrentRow.Index].Value.ToString()), int.Parse(ma), txtTenHH.Text, int.Parse(txtDonGia.Text));
                 busHH.update(dto);
                 txtTenHH.Text = string.Empty;
                 txtTenNCC.Text = string.Empty;
@@ -65,7 +58,7 @@ namespace quanLyNhaHangBuffer
         {
             if (MessageBox.Show("Bạn có chắc muốn xóa!") == DialogResult.OK)
             {
-                DTO_HH dtohh = new DTO_HH(int.Parse(dtgvHH[0, dtgvHH.CurrentRow.Index].Value.ToString()));
+                HH_DTO dtohh = new HH_DTO(int.Parse(dtgvHH[0, dtgvHH.CurrentRow.Index].Value.ToString()));
                 busHH.delete(dtohh);
                 txtTenHH.Text = string.Empty;
                 txtTenNCC.Text = string.Empty;
@@ -92,17 +85,27 @@ namespace quanLyNhaHangBuffer
         {
             try
             {
-                DTO_HH dtohh = new DTO_HH(int.Parse(ma), txtTenHH.Text, int.Parse(txtDonGia.Text));
-                busHH.add(dtohh);
-                txtTenHH.Text = string.Empty;
-                txtTenNCC.Text = string.Empty;
-                txtDonGia.Text = string.Empty;
-
+                dtoHH = new HH_DTO(txtTenHH.Text);
+                if (busHH.checkHangHoa(dtoHH) == false)
+                {
+                    dtoHH = new HH_DTO(int.Parse(ma), txtTenHH.Text, int.Parse(txtDonGia.Text));
+                    busHH.add(dtoHH);
+                    txtTenHH.Text = string.Empty;
+                    txtTenNCC.Text = string.Empty;
+                    txtDonGia.Text = string.Empty;
+                }
+                else
+                    MessageBox.Show("Sản phẩm bị trùng");
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             dtgvHH.DataSource = busHH.hienThi();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

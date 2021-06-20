@@ -16,8 +16,8 @@ namespace quanLyNhaHangBuffer
 {
     public partial class formInBill : Form
     {
-        BUS_TONGHOP bus = new BUS_TONGHOP();
-        DTO_TONGHOP dto;
+        TONGHOP_BUS bus = new TONGHOP_BUS();
+        TONGHOP_DTO dto;
         string mahd;    
         public formInBill(string text)
         {
@@ -27,7 +27,7 @@ namespace quanLyNhaHangBuffer
 
         private void formInBill_Load(object sender, EventArgs e)
         {
-            dto = new DTO_TONGHOP(mahd);
+            dto = new TONGHOP_DTO(mahd);
             ReportDataSource reportDataSource = new ReportDataSource("DataSet1",bus.hienThiBill(dto));
             reportViewer1.LocalReport.ReportPath = @"C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\quanLyNhaHangBuffer\bill.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();

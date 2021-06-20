@@ -84,3 +84,4 @@ C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\quanLyNhaHangBuffer\bin\Debug
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\quanLyNhaHangBuffer\bin\Debug\BUS_QUANLY.pdb
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\quanLyNhaHangBuffer\bin\Debug\DAO_QUANLY.pdb
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\quanLyNhaHangBuffer\bin\Debug\DTO_QUANLY.pdb
+C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\quanLyNhaHangBuffer\obj\Debug\quanLyNhaHangBuffer.formNhaCungCap.resources

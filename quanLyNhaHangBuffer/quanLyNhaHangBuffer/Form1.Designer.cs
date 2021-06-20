@@ -44,6 +44,7 @@ namespace quanLyNhaHangBuffer
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnDM = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
+            this.btnKhachHang = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel.SuspendLayout();
@@ -100,38 +101,42 @@ namespace quanLyNhaHangBuffer
             // btnThongKe
             // 
             this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 507);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 558);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(269, 68);
             this.btnThongKe.TabIndex = 4;
             this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThongKe.UseVisualStyleBackColor = true;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnNhapHang
             // 
             this.btnNhapHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNhapHang.Location = new System.Drawing.Point(0, 439);
+            this.btnNhapHang.Location = new System.Drawing.Point(0, 490);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Size = new System.Drawing.Size(269, 68);
             this.btnNhapHang.TabIndex = 3;
             this.btnNhapHang.Text = "Nhập hàng";
+            this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNhapHang.UseVisualStyleBackColor = true;
             this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
             // btnBanHang
             // 
             this.btnBanHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBanHang.Location = new System.Drawing.Point(0, 371);
+            this.btnBanHang.Location = new System.Drawing.Point(0, 422);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(269, 68);
             this.btnBanHang.TabIndex = 2;
             this.btnBanHang.Text = "Bán hàng";
+            this.btnBanHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBanHang.UseVisualStyleBackColor = true;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // panelDM
             // 
+            this.panelDM.Controls.Add(this.btnKhachHang);
             this.panelDM.Controls.Add(this.btnChiTietLich);
             this.panelDM.Controls.Add(this.btnHH);
             this.panelDM.Controls.Add(this.btnNCC);
@@ -139,39 +144,42 @@ namespace quanLyNhaHangBuffer
             this.panelDM.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDM.Location = new System.Drawing.Point(0, 68);
             this.panelDM.Name = "panelDM";
-            this.panelDM.Size = new System.Drawing.Size(269, 303);
+            this.panelDM.Size = new System.Drawing.Size(269, 354);
             this.panelDM.TabIndex = 1;
             // 
             // btnChiTietLich
             // 
-            this.btnChiTietLich.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnChiTietLich.Location = new System.Drawing.Point(0, 210);
+            this.btnChiTietLich.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnChiTietLich.Location = new System.Drawing.Point(0, 138);
             this.btnChiTietLich.Name = "btnChiTietLich";
-            this.btnChiTietLich.Size = new System.Drawing.Size(269, 71);
+            this.btnChiTietLich.Size = new System.Drawing.Size(269, 74);
             this.btnChiTietLich.TabIndex = 4;
             this.btnChiTietLich.Text = "Chi tiết thời gian làm";
+            this.btnChiTietLich.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChiTietLich.UseVisualStyleBackColor = true;
             this.btnChiTietLich.Click += new System.EventHandler(this.btnChiTietLich_Click);
             // 
             // btnHH
             // 
-            this.btnHH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHH.Location = new System.Drawing.Point(0, 139);
+            this.btnHH.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnHH.Location = new System.Drawing.Point(0, 212);
             this.btnHH.Name = "btnHH";
             this.btnHH.Size = new System.Drawing.Size(269, 71);
             this.btnHH.TabIndex = 3;
             this.btnHH.Text = "Hàng hóa";
+            this.btnHH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHH.UseVisualStyleBackColor = true;
             this.btnHH.Click += new System.EventHandler(this.btnHH_Click);
             // 
             // btnNCC
             // 
-            this.btnNCC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNCC.Location = new System.Drawing.Point(0, 68);
+            this.btnNCC.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnNCC.Location = new System.Drawing.Point(0, 283);
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.Size = new System.Drawing.Size(269, 71);
             this.btnNCC.TabIndex = 2;
             this.btnNCC.Text = "Nhà cung cấp";
+            this.btnNCC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNCC.UseVisualStyleBackColor = true;
             this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
@@ -183,6 +191,7 @@ namespace quanLyNhaHangBuffer
             this.btnNhanVien.Size = new System.Drawing.Size(269, 68);
             this.btnNhanVien.TabIndex = 1;
             this.btnNhanVien.Text = "Nhân viên";
+            this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhanVien.UseVisualStyleBackColor = true;
             this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
@@ -194,6 +203,7 @@ namespace quanLyNhaHangBuffer
             this.btnDM.Size = new System.Drawing.Size(269, 68);
             this.btnDM.TabIndex = 0;
             this.btnDM.Text = "Danh mục";
+            this.btnDM.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDM.UseVisualStyleBackColor = true;
             this.btnDM.Click += new System.EventHandler(this.btnDM_Click);
             // 
@@ -204,6 +214,17 @@ namespace quanLyNhaHangBuffer
             this.panelChild.Name = "panelChild";
             this.panelChild.Size = new System.Drawing.Size(1649, 800);
             this.panelChild.TabIndex = 3;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 68);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(269, 71);
+            this.btnKhachHang.TabIndex = 5;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -245,6 +266,7 @@ namespace quanLyNhaHangBuffer
         private System.Windows.Forms.Button btnNhapHang;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnChiTietLich;
+        private System.Windows.Forms.Button btnKhachHang;
     }
 }
 

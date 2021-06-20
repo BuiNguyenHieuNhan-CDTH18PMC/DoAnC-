@@ -41,11 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO_CALAMVIEC.cs" />
-    <Compile Include="DAO_HDNH.cs" />
-    <Compile Include="DAO_HH.cs" />
-    <Compile Include="DAO_THONGKE.cs" />
-    <Compile Include="DAO_TONGHOP.cs" />
+    <Compile Include="CALAMVIEC_DAO.cs" />
+    <Compile Include="HDNH_DAO.cs" />
+    <Compile Include="HH_DAO.cs" />
+    <Compile Include="NHACUNGCAP_DAO.cs" />
+    <Compile Include="NHANVIEN_DAO.cs" />
+    <Compile Include="THONGKE_DAO.cs" />
+    <Compile Include="TONGHOP_DAO.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

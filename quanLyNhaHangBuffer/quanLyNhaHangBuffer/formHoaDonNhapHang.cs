@@ -14,8 +14,9 @@ namespace quanLyNhaHangBuffer
 {
     public partial class formHoaDonNhapHang : Form
     {
-        BUS_HDNH bus = new BUS_HDNH();
-        DTO_HDNH dto;       
+        HDNH_BUS bus = new HDNH_BUS();
+        HDNH_DTO dto;
+        List<HDNH_DTO> test = new List<HDNH_DTO>();
         string ma;
         int tong = 0;        
         public formHoaDonNhapHang()
@@ -58,8 +59,7 @@ namespace quanLyNhaHangBuffer
         private void formHoaDonNhapHang_Load(object sender, EventArgs e)
         {
             AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
-            dto = new DTO_HDNH();
-            List<DTO_HDNH> test = new List<DTO_HDNH>();
+            dto = new HDNH_DTO();
             test = bus.auto(dto);
             foreach(var giatri in test)
             {
@@ -96,7 +96,7 @@ namespace quanLyNhaHangBuffer
             {                
                 try
                 {
-                    dto = new DTO_HDNH(txtMaHD.Text, date, 1, int.Parse(txtTong.Text));
+                    dto = new HDNH_DTO(txtMaHD.Text, date, 1, int.Parse(txtTong.Text));
                     bus.luuHD(dto);
                 }
                 catch (Exception ex)
@@ -108,7 +108,7 @@ namespace quanLyNhaHangBuffer
                 {
                     try
                     {
-                        dto = new DTO_HDNH(txtMaHD.Text, int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString()),int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()), int.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()));
+                        dto = new HDNH_DTO(txtMaHD.Text, int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString()),int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()), int.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()));
                         bus.luuCTHD(dto);
                     }
                     catch (Exception ex)
@@ -170,8 +170,8 @@ namespace quanLyNhaHangBuffer
         {
             if (!string.IsNullOrWhiteSpace(txtTenHH.Text))
             {
-                dto = new DTO_HDNH(txtTenHH.Text);
-                List<DTO_HDNH> test = new List<DTO_HDNH>();
+                dto = new HDNH_DTO(txtTenHH.Text);
+                List<HDNH_DTO> test = new List<HDNH_DTO>();
                 test = bus.timGiaVaMa(dto);
                 foreach(var giatri in test)
                 {

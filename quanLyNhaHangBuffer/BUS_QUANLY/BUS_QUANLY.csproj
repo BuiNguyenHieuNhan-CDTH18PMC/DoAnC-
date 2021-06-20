@@ -41,11 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BUS_CALAMVIEC.cs" />
-    <Compile Include="BUS_HDNH.cs" />
-    <Compile Include="BUS_HH.cs" />
-    <Compile Include="BUS_THONGKE.cs" />
-    <Compile Include="BUS_TONGHOP.cs" />
+    <Compile Include="CALAMVIEC_BUS.cs" />
+    <Compile Include="HDNH_BUS.cs" />
+    <Compile Include="HH_BUS.cs" />
+    <Compile Include="NHACUNGCAP_BUS.cs" />
+    <Compile Include="NHANVIEN_BUS.cs" />
+    <Compile Include="THONGKE_BUS.cs" />
+    <Compile Include="TONGHOP_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

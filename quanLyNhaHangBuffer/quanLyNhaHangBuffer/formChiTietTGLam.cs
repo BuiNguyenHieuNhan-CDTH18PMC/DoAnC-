@@ -15,8 +15,8 @@ namespace quanLyNhaHangBuffer
 {
     public partial class formChiTietTGLam : Form
     {
-        BUS_CALAMVIEC bus = new BUS_CALAMVIEC();
-        DTO_CALAMVIEC dto;
+        CALAMVIEC_BUS bus = new CALAMVIEC_BUS();
+        CALAMVIEC_DTO dto;
         public formChiTietTGLam()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace quanLyNhaHangBuffer
         {
             try
             {
-                dto = new DTO_CALAMVIEC(dateBD.Value, dateKT.Value, int.Parse(txtSoGio.Text));
+                dto = new CALAMVIEC_DTO(dateBD.Value, dateKT.Value, int.Parse(txtSoGio.Text));
                 bus.addCa(dto);
             }
             catch (Exception ex)
@@ -60,7 +60,7 @@ namespace quanLyNhaHangBuffer
         {
             try
             {
-                dto = new DTO_CALAMVIEC(int.Parse(dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString()), dateBD.Value, dateKT.Value, int.Parse(txtSoGio.Text));
+                dto = new CALAMVIEC_DTO(int.Parse(dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString()), dateBD.Value, dateKT.Value, int.Parse(txtSoGio.Text));
                 bus.updateCa(dto);
             }
             catch (Exception ex)
@@ -77,7 +77,7 @@ namespace quanLyNhaHangBuffer
         {
             if (MessageBox.Show("Bạn có chắc muốn xóa!") == DialogResult.OK)
             {
-                dto = new DTO_CALAMVIEC(int.Parse(dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString()));
+                dto = new CALAMVIEC_DTO(int.Parse(dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString()));
                 bus.deleteCa(dto);
             }
             dateBD.Text = DateTime.Now.TimeOfDay.ToString();
