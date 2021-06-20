@@ -9,3 +9,14 @@ C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUAN
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.csproj.CopyComplete
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.dll
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\bin\Debug\BUS_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\bin\Debug\BUS_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\bin\Debug\DAO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\bin\Debug\DTO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\bin\Debug\DAO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\bin\Debug\DTO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.csproj.AssemblyReference.cache
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.csproj.CoreCompileInputs.cache
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.csproj.CopyComplete
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\BUS_QUANLY\obj\Debug\BUS_QUANLY.pdb

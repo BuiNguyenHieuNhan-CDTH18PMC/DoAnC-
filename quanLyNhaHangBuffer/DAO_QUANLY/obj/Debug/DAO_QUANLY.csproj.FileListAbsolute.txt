@@ -7,3 +7,12 @@ C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DTO_QUAN
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csproj.CopyComplete
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.dll
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DAO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DAO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DTO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\bin\Debug\DTO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csproj.AssemblyReference.cache
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csproj.CoreCompileInputs.cache
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.csproj.CopyComplete
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DAO_QUANLY\obj\Debug\DAO_QUANLY.pdb

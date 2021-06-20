@@ -44,6 +44,7 @@
     <Compile Include="CALAMVIEC_DTO.cs" />
     <Compile Include="HDNH_DTO.cs" />
     <Compile Include="HH_DTO.cs" />
+    <Compile Include="KHACHHANG_DTO.cs" />
     <Compile Include="NHACUNGCAP_DTO.cs" />
     <Compile Include="NHANVIEN_DTO.cs" />
     <Compile Include="THONGKE_DTO.cs" />

@@ -32,6 +32,7 @@ namespace quanLyNhaHangBuffer
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formNhaCungCap));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnClose = new Bunifu.Framework.UI.BunifuTileButton();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@ namespace quanLyNhaHangBuffer
             this.nCCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nCC = new quanLyNhaHangBuffer.NCC();
             this.nCCTableAdapter = new quanLyNhaHangBuffer.NCCTableAdapters.NCCTableAdapter();
-            this.btnClose = new Bunifu.Framework.UI.BunifuTileButton();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNCC)).BeginInit();
@@ -84,6 +84,26 @@ namespace quanLyNhaHangBuffer
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.color = System.Drawing.Color.White;
+            this.btnClose.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImagePosition = 21;
+            this.btnClose.ImageZoom = 50;
+            this.btnClose.LabelPosition = 43;
+            this.btnClose.LabelText = "Đóng";
+            this.btnClose.Location = new System.Drawing.Point(278, 622);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(133, 134);
+            this.btnClose.TabIndex = 64;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtSDT
             // 
@@ -316,26 +336,6 @@ namespace quanLyNhaHangBuffer
             // nCCTableAdapter
             // 
             this.nCCTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.White;
-            this.btnClose.color = System.Drawing.Color.White;
-            this.btnClose.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImagePosition = 21;
-            this.btnClose.ImageZoom = 50;
-            this.btnClose.LabelPosition = 43;
-            this.btnClose.LabelText = "Làm mới";
-            this.btnClose.Location = new System.Drawing.Point(278, 622);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(6);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(133, 134);
-            this.btnClose.TabIndex = 64;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // formNhaCungCap
             // 

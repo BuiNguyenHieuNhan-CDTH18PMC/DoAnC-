@@ -85,5 +85,10 @@ namespace quanLyNhaHangBuffer
         {
             openFormChild(new formChiTietTGLam());
         }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            openFormChild(new formKhachHang());
+        }
     }
 }

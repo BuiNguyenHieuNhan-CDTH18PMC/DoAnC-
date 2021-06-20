@@ -44,6 +44,7 @@
     <Compile Include="CALAMVIEC_DAO.cs" />
     <Compile Include="HDNH_DAO.cs" />
     <Compile Include="HH_DAO.cs" />
+    <Compile Include="KHACHHANG_DAO.cs" />
     <Compile Include="NHACUNGCAP_DAO.cs" />
     <Compile Include="NHANVIEN_DAO.cs" />
     <Compile Include="THONGKE_DAO.cs" />

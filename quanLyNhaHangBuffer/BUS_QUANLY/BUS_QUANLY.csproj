@@ -44,6 +44,7 @@
     <Compile Include="CALAMVIEC_BUS.cs" />
     <Compile Include="HDNH_BUS.cs" />
     <Compile Include="HH_BUS.cs" />
+    <Compile Include="KHACHHANG_BUS.cs" />
     <Compile Include="NHACUNGCAP_BUS.cs" />
     <Compile Include="NHANVIEN_BUS.cs" />
     <Compile Include="THONGKE_BUS.cs" />

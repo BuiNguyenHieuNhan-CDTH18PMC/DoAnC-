@@ -38,13 +38,13 @@ namespace quanLyNhaHangBuffer
             this.btnNhapHang = new System.Windows.Forms.Button();
             this.btnBanHang = new System.Windows.Forms.Button();
             this.panelDM = new System.Windows.Forms.Panel();
+            this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnChiTietLich = new System.Windows.Forms.Button();
             this.btnHH = new System.Windows.Forms.Button();
             this.btnNCC = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnDM = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
-            this.btnKhachHang = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel.SuspendLayout();
@@ -79,7 +79,7 @@ namespace quanLyNhaHangBuffer
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 950);
+            this.panel2.Location = new System.Drawing.Point(0, 931);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1920, 130);
             this.panel2.TabIndex = 1;
@@ -95,7 +95,7 @@ namespace quanLyNhaHangBuffer
             this.panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel.Location = new System.Drawing.Point(0, 150);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(271, 800);
+            this.panel.Size = new System.Drawing.Size(271, 781);
             this.panel.TabIndex = 2;
             // 
             // btnThongKe
@@ -146,6 +146,18 @@ namespace quanLyNhaHangBuffer
             this.panelDM.Name = "panelDM";
             this.panelDM.Size = new System.Drawing.Size(269, 354);
             this.panelDM.TabIndex = 1;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 68);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(269, 71);
+            this.btnKhachHang.TabIndex = 5;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnChiTietLich
             // 
@@ -212,25 +224,14 @@ namespace quanLyNhaHangBuffer
             this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChild.Location = new System.Drawing.Point(271, 150);
             this.panelChild.Name = "panelChild";
-            this.panelChild.Size = new System.Drawing.Size(1649, 800);
+            this.panelChild.Size = new System.Drawing.Size(1649, 781);
             this.panelChild.TabIndex = 3;
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 68);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(269, 71);
-            this.btnKhachHang.TabIndex = 5;
-            this.btnKhachHang.Text = "Khách hàng";
-            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1920, 1061);
             this.Controls.Add(this.panelChild);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel2);

@@ -8,6 +8,6 @@ namespace quanLyNhaHangBuffer
 {
     class classKetNoi
     {
-        public string connect = "Data Source=laptop-aokmt82l;Initial Catalog=qlBanNuocMangVe;Integrated Security=True";
+        public string connect = "Data Source=laptop-ehm2nnap;Initial Catalog=qlBanNuocMangVe;Integrated Security=True";
     }
 }

@@ -4,3 +4,9 @@ C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUAN
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.csproj.CoreCompileInputs.cache
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.dll
 C:\Users\HieuNhan\source\repos\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DTO_QUANLY\bin\Debug\DTO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DTO_QUANLY\bin\Debug\DTO_QUANLY.pdb
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.csproj.AssemblyReference.cache
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.csproj.CoreCompileInputs.cache
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.dll
+C:\Users\nhan2\OneDrive\Desktop\DoAnC-\quanLyNhaHangBuffer\DTO_QUANLY\obj\Debug\DTO_QUANLY.pdb

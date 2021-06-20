@@ -9,6 +9,6 @@ namespace DAO_QUANLY
 {
     public class DBConnect
     {
-        protected SqlConnection conn = new SqlConnection("Data Source=laptop-aokmt82l;Initial Catalog=qlBanNuocMangVe;Integrated Security=True");
+        protected SqlConnection conn = new SqlConnection("Data Source=laptop-ehm2nnap;Initial Catalog=qlBanNuocMangVe;Integrated Security=True");
     }
 }
